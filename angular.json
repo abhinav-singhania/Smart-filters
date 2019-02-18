@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles/styles.scss"
             ],
             "scripts": []
           },
@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "kognetics"
+  "defaultProject": "kognetics",
+  "cli": {
+    "warnings": {
+      "typescriptMismatch": false
+    }
+  }
 }

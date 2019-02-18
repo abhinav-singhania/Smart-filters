@@ -1,0 +1,27 @@
+
+
+@import 'src/styles/colors.scss';
+
+.page-header {
+  background: rgba($color: $color-secondary-bg, $alpha: 1.0);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  .header-row {
+    padding: 16px 32px;
+  }
+  .logo {
+    width: 150px;
+    img {
+      width: 100%;
+    }
+  }
+  .user {
+    color: #ffffff;
+  }
+  .user-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+}

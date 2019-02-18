@@ -1,0 +1,49 @@
+@import 'src/styles/colors.scss';
+
+.tab-filter {
+  .all-filters {
+    padding: 12px 0px;
+  }
+  .filter-chip {
+    &.profile {
+      background-color: rgb(34,23,32);
+      span {
+        color: rgb(222 ,128, 205);
+      }
+    }
+    &.strategy {
+      background-color: rgb(13,28,17);
+      span {
+        color: rgb(51 ,196, 58);
+      }
+    }
+    &.potential {
+      background-color: rgb(34,23,32);
+      span {
+        color: rgb(226 ,127, 59);
+      }
+    }
+    &.comparable {
+      background-color: rgb(33,15,16);
+      span {
+        color: rgb(244 ,72, 82);
+      }
+    }
+    &.path {
+      background-color: rgb(18,25,34);
+      span {
+        color: rgb(95 ,151, 226);
+      }
+    }
+  }
+
+  .smart-filter-item {
+    margin-top: 12px;
+    width: 400px;
+    line-height: 1.8;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 8px;
+    border-color: $color-primary-border;
+  }
+}

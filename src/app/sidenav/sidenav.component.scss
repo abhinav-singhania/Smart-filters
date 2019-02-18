@@ -1,0 +1,30 @@
+@import 'src/styles/colors.scss';
+
+.widget {
+  padding: 16px;
+  background:  $color-secondary-bg;
+  width: 400px;
+  color: #ffffff;
+  border-radius: 4px;
+  .icon {
+    background: $color-icon-bg;
+    width: 42px;
+    opacity: 0.6;
+    border-radius: 4px;
+    mat-icon {
+      color: $color-icon;
+    }
+  }
+
+  .title {
+    h3 {
+      margin: 0px;
+    }
+    p {
+      margin: 0px;
+    }
+  }
+  input, .mat-input-element  {
+    height: 32px;
+  }
+}

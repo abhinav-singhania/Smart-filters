@@ -1,0 +1,69 @@
+<div class="page-header">
+  <div class="header-row">
+    <div class="title"
+      fxLayout
+      fxLayoutAlign=" center">
+      <div fxLayout="column">
+        <div class="logo"
+          fxLayoutAlign="start center">
+          <img src="https://www.kognetics.com/wp-content/uploads/2018/11/imageedit_39_8732036311.png"/>
+        </div>
+      </div>
+      <div fxFlex
+        fxLayoutAlign="center center">
+        <div fxLayout="row"
+          class="search"
+          fxLayoutAlign="center center">
+          <mat-icon>search</mat-icon>
+          <input matInput
+          placeholder=" Search for companies, people & investors"/>
+        </div>
+      </div>
+      <div class="user">
+        <div fxFlexFill
+          fxLayoutAlign="center center"
+          #bottomMenuTrigger="matMenuTrigger"
+          [matMenuTriggerFor]="bottomMenu"
+          (mouseenter)="bottomMenuTrigger.openMenu()">
+          <img src="../../assets/user/girl.jpg" class="user-img">
+          <span>Mirinali Saha</span>
+          <mat-icon>arrow_drop_down</mat-icon>
+        </div>
+      </div>
+      <ng-content class="print-hide-element"
+        select=".header-button"></ng-content>
+    </div>
+  </div>
+</div>
+
+
+<mat-menu #bottomMenu="matMenu"
+  [overlapTrigger]="false">
+  <div>
+
+    <a mat-menu-item
+      fxLayoutAlign="start center"
+      fxLayout>
+      <mat-icon>settings</mat-icon>
+      <span>Settings</span>
+    </a>
+
+    <a mat-menu-item
+      fxLayoutAlign="start center"
+      fxLayout>
+      <mat-icon>account_circle</mat-icon>
+      <span>Privacy</span>
+    </a>
+
+    <a mat-menu-item
+      fxLayoutAlign="start center"
+      fxLayout>
+      <mat-icon>credit_card</mat-icon>
+      <span>Manage Billing</span>
+    </a>
+
+    <a mat-menu-item>
+      <span>Logout</span>
+    </a>
+  </div>
+</mat-menu>

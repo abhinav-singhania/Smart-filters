@@ -1,0 +1,32 @@
+<div class="side-nav">
+  <div class="inner-container">
+    <div fxLayout="column"
+      fxLayoutGap="16px">
+      <div *ngFor="let sideNavData of sideNavWidgetData"
+        class="widget"
+        fxLayout="column"
+        fxLayoutGap="12px">
+        <div fxLayout="row"
+          fxLayoutAlign="start stretch"
+          fxLayoutGap="8px">
+          <div fxLayout="row"
+            fxLayoutAlign="center center"
+            class="icon">
+              <mat-icon>{{ sideNavData.icon }}</mat-icon>
+          </div>
+          <div class="title">
+            <h3>{{ sideNavData.title }}</h3>
+            <p>Lorem ipsum dolor sit amet,</p>
+          </div>
+        </div>
+        <div fxLayout="row"
+          fxLayoutAlign=" center">
+          <input matInput
+            placeholder=" Search for companies"/>
+          <mat-icon>arrow_right</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

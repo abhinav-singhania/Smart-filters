@@ -7,16 +7,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Angular requires Node.js version 8.x or 10.x
 Install Npm/Yarn
 ```
-### Install Angular Cli (Ignore is already exist)
-`npm install -g @angular/cli` or refer to (https://angular.io/guide/quickstart)
+### Install Angular Cli (Ignore if already exist)
+npm install -g @angular/cli or refer to (https://angular.io/guide/quickstart)
 ```
 
-### Prepare project
-```
 ### Install all local modules
-`yarn install`/ `npm install`
 
-```
+yarn install/ npm install
+
 
 ## Development server
 

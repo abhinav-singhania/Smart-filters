@@ -1,0 +1,30 @@
+<div class="tab-filter">
+  <div class="all-filters" 
+    fxLayout="row"
+    fxLayoutGap="12px">
+    <div *ngFor="let filterItem of tabItem.allFilters">
+      <div class="filter-chip-container"
+        [ngClass]="{ 'selected': filterItem.key === filterKey }">
+        <div class="filter-chip"
+        [ngClass]="filterItem.key"
+        (click)="chooseFilter(filterItem.key)"
+        style="cursor: pointer;">
+          <span>{{filterItem.value}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="smart-filters"
+    fxLayout="row wrap"
+    fxLayoutGap="12px">
+    <div *ngFor="let filterItem of smartFilters"
+      class="smart-filter-item">
+      <span>{{filterItem.filterValue}}</span>
+      <span class="filter-chip"
+      [ngClass]="filterItem.filterKey">
+        <span>{{filterItem.filterName}}</span>
+      </span>
+    </div>
+  </div>
+</div>

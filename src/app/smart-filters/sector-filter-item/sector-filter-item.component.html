@@ -1,0 +1,40 @@
+<div class="sector-filters">
+    <div class="all-filters" 
+      fxLayout="row wrap"
+      fxLayoutGap="12px">
+      <div *ngFor="let filterItem of allSectorFilters.allFilters">
+        <div class="filter-chip-container"
+          [ngClass]="{ 'selected': filterItem.key === filterKey }">
+          <div class="filter-chip"
+          [ngClass]="filterKey"
+          (click)="chooseFilter(filterItem.key)">
+            <span>{{filterItem.value}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="filter-items"
+      fxLayout="column wrap"
+      fxLayoutGap="12px">
+      <div *ngFor="let filterItem of selectedSectorFilters"
+        class="sector-filter-item">
+        <div class="title"
+          fxLayout
+          fxLayoutAlign="center center">
+          <mat-icon>{{filterItem.icon}}</mat-icon>
+          <h3>{{filterItem.filterName}}</h3>
+          <span fxFlex></span>
+            <span>VIEW INDUSTRIES</span>
+        </div>
+        <div class="filter-value"
+          fxLayout="row wrap"
+          fxLayoutGap="8px">
+          <div *ngFor="let filterValue of filterItem.filterValue"
+            class="filter-chip">
+              <span>{{filterValue}}</span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

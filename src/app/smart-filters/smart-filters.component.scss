@@ -1,0 +1,41 @@
+@import 'src/styles/colors.scss';
+
+ .filter-container {
+  background: $color-secondary-bg;
+  border-radius: 8px;
+  padding: 16px;
+  h2 {
+    margin-top: 0px;
+  }
+}
+.charts {
+  margin: 24px 0px;
+
+  .secondary-container {
+    height: 300px;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 8px;
+    border-color: $color-primary-border;
+    width: 50%;
+    .use-case-img {
+      width: 260px;
+    }
+    .top-charts-img {
+      width: 170px;
+    }
+    .chart-item {
+      border: 1px solid;
+      border-radius: 8px;
+      border-color: $color-secondary-border;
+      margin-top: 12px;
+      margin-right: 12px;
+      padding: 0px 8px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .top-chart-item {
+      height: 38px;
+    }
+  }
+}

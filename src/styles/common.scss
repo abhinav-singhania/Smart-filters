@@ -1,0 +1,38 @@
+.search {
+  background: rgba($color: $color-primary-bg, $alpha: 1.0);
+  padding: 8px 12px;
+  color: #ffffff;
+}
+
+input, .mat-input-element  {
+  background: rgba($color: $color-primary-bg, $alpha: 1.0);
+  width: 320px;
+  box-sizing: border-box;
+  border: none;
+  outline: none; // padding: 0;
+  height: 100%;
+  font-size: 14px;
+}
+
+.filter-chip {
+  margin-top: 8px;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: rgb(21,22,24);
+  color: rgb(152,152,152);
+  cursor: pointer;
+}
+
+.filter-chip-container {
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
+  &.selected {
+    opacity: 1;
+    .filter-chip {
+      font-weight: 600;
+    }
+  }
+}

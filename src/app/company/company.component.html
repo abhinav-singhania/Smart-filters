@@ -1,0 +1,19 @@
+<app-page-header></app-page-header>
+<mat-sidenav-container fxFlexFill
+  [style.background]="'#000'">
+  <div fxFlexFill
+    fxLayout="column"
+    class="main-container">
+    <div fxFlex class="main-container">
+      <app-smart-filters></app-smart-filters>
+    </div>
+  </div>
+  <mat-sidenav [style.width.px]="440"
+    [style.background]="'#000'"
+    mode="side"
+    opened
+    position="end">
+    <app-sidenav></app-sidenav>
+  </mat-sidenav>
+</mat-sidenav-container>
+  
