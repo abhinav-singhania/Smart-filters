@@ -11,9 +11,9 @@ Install Npm/Yarn
 npm install -g @angular/cli or refer to (https://angular.io/guide/quickstart)
 ```
 
-### Install all local modules
+## Install all local modules
 
-yarn install/ npm install
+`yarn install` or `npm install`
 
 
 ## Development server
