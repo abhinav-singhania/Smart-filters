@@ -46,4 +46,18 @@
     border-radius: 8px;
     border-color: $color-primary-border;
   }
+
+  .slider {
+    margin: 12px;
+    .circle {
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      background: rgb(21,22,24);
+      &.selected {
+        background: red;
+      }
+    }
+  }
 }

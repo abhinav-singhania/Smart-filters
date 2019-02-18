@@ -16,6 +16,8 @@ export class SmartFilterItemComponent implements OnInit {
   public filterKey: string;
   public allFilters: string[];
 
+  public selectDot = 'dotOne';
+
   constructor() { }
 
   ngOnInit() {
@@ -24,6 +26,7 @@ export class SmartFilterItemComponent implements OnInit {
   }
 
   public chooseFilter( _filterKey?: string ) {
+    this.selectDot = 'dotOne';
     if (this.filterKey === _filterKey) {
       _filterKey = '';
     }
@@ -33,6 +36,10 @@ export class SmartFilterItemComponent implements OnInit {
       this.selectedFilter = this.filterItems;
     }
     return this.selectedFilter;
+  }
+
+  public changeSlider(dotValue: string) {
+    this.selectDot = dotValue;
   }
 
   public get smartFilters() {

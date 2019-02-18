@@ -33,7 +33,97 @@ export const tabFilterItem: TabFilterItem[] = [
         filterName: 'Fast path',
         filterKey: 'path',
         filterValue: 'What is the fast path to a company'
-      }
+      },
+      {
+        filterName: 'Strategy gaps',
+        filterKey: 'strategy',
+        filterValue: 'what are the most critical strategic gaps for a company across its portfolio ?'
+      },
+      {
+        filterName: 'Profile',
+        filterKey: 'profile',
+        filterValue: 'List of industry segements that a company operates in again'
+      },
+      {
+        filterName: 'Strategy gaps',
+        filterKey: 'strategy',
+        filterValue: 'what are the strategic gaps for a company based on benchmarking vs closet competitors?'
+      },
+      {
+        filterName: 'Potential acquires',
+        filterKey: 'potential',
+        filterValue: 'Who can potentially acquire the company'
+      },
+      {
+        filterName: 'Comparables',
+        filterKey: 'comparable',
+        filterValue: 'List of public company comparables for a company multiple '
+      },
+      {
+        filterName: 'Fast path',
+        filterKey: 'path',
+        filterValue: 'What is the fast path to a company'
+      },
+      {
+        filterName: 'Profile',
+        filterKey: 'profile',
+        filterValue: 'List of industry segements that a company operates in all the sectors'
+      },
+      {
+        filterName: 'Strategy gaps',
+        filterKey: 'strategy',
+        filterValue: 'what are the most critical strategic gaps for a company across its portfolio ?'
+      },
+      {
+        filterName: 'Strategy gaps',
+        filterKey: 'strategy',
+        filterValue: 'what are the strategic gaps for a company based on benchmarking vs closet competitors ?'
+      },
+      {
+        filterName: 'Potential acquires',
+        filterKey: 'potential',
+        filterValue: 'Who can potentially acquire the company'
+      },
+      {
+        filterName: 'Comparables',
+        filterKey: 'comparable',
+        filterValue: 'List of public company comparables for a company'
+      },
+      {
+        filterName: 'Fast path',
+        filterKey: 'path',
+        filterValue: 'What is the fast path to a company'
+      },
+      {
+        filterName: 'Profile',
+        filterKey: 'profile',
+        filterValue: 'List of industry segements that a company operates in'
+      },
+      {
+        filterName: 'Strategy gaps',
+        filterKey: 'strategy',
+        filterValue: 'what are the most critical strategic gaps for a company across its portfolio ?'
+      },
+      {
+        filterName: 'Strategy gaps',
+        filterKey: 'strategy',
+        filterValue: 'what are the strategic gaps for a company based on benchmarking vs closet competitors ?'
+      },
+      {
+        filterName: 'Potential acquires',
+        filterKey: 'potential',
+        filterValue: 'Who can potentially acquire the company'
+      },
+      {
+        filterName: 'Comparables',
+        filterKey: 'comparable',
+        filterValue: 'List of public company comparables for a company that operates in space exploration'
+      },
+      {
+        filterName: 'Fast path',
+        filterKey: 'path',
+        filterValue: 'What is the fast path to a company'
+      },
     ],
     allFilters: [
       {

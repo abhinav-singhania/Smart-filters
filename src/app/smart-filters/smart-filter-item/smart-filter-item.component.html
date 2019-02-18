@@ -16,15 +16,71 @@
   </div>
 
   <div class="smart-filters"
-    fxLayout="row wrap"
-    fxLayoutGap="12px">
-    <div *ngFor="let filterItem of smartFilters"
-      class="smart-filter-item">
-      <span>{{filterItem.filterValue}}</span>
-      <span class="filter-chip"
-      [ngClass]="filterItem.filterKey">
-        <span>{{filterItem.filterName}}</span>
-      </span>
+    
+   >
+    <div [ngSwitch]="selectDot">
+      <div *ngSwitchCase="'dotOne'"
+        fxLayout="row wrap" fxLayoutGap="12px">
+        <div *ngFor="let filterItem of smartFilters | slice: 0:6"
+          class="smart-filter-item">
+          <span>{{filterItem.filterValue}}</span>
+          <span class="filter-chip"
+          [ngClass]="filterItem.filterKey">
+            <span>{{filterItem.filterName}}</span>
+          </span>
+        </div>
+      </div>
+      <div *ngSwitchCase="'dotTwo'"
+        fxLayout="row wrap"  fxLayoutGap="12px">
+        <div *ngFor="let filterItem of smartFilters | slice: 7:13"
+          class="smart-filter-item">
+          <span>{{filterItem.filterValue}}</span>
+          <span class="filter-chip"
+          [ngClass]="filterItem.filterKey">
+            <span>{{filterItem.filterName}}</span>
+          </span>
+        </div>
+      </div>
+      <div *ngSwitchCase="'dotThree'"
+        fxLayout="row wrap"  fxLayoutGap="12px">
+        <div *ngFor="let filterItem of smartFilters | slice: 14:19"
+          class="smart-filter-item">
+          <span>{{filterItem.filterValue}}</span>
+          <span class="filter-chip"
+          [ngClass]="filterItem.filterKey">
+            <span>{{filterItem.filterName}}</span>
+          </span>
+        </div>
+      </div>
+      <div *ngSwitchCase="'dotFour'"
+        fxLayout="row wrap"  fxLayoutGap="12px">
+        <div *ngFor="let filterItem of smartFilters | slice: 20:25"
+          class="smart-filter-item">
+          <span>{{filterItem.filterValue}}</span>
+          <span class="filter-chip"
+          [ngClass]="filterItem.filterKey">
+            <span>{{filterItem.filterName}}</span>
+          </span>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div fxLayout="row"
+    fxLayoutGap="12px"
+    class="slider"
+    *ngIf="smartFilters.length > 6">
+    <div class="circle"
+      [ngClass]="{ 'selected': selectDot === 'dotOne' }" 
+      (click)="changeSlider('dotOne')"></div>
+    <div class="circle"
+      [ngClass]="{ 'selected': selectDot === 'dotTwo' }"
+      (click)="changeSlider('dotTwo')"></div>
+    <div class="circle"
+      [ngClass]="{ 'selected': selectDot === 'dotThree' }"
+      (click)="changeSlider('dotThree')"></div>
+    <div class="circle"
+      [ngClass]="{ 'selected': selectDot === 'dotFour' }"
+      (click)="changeSlider('dotFour')"></div>
   </div>
 </div>
