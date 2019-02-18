@@ -26,8 +26,6 @@ export class SmartFilterItemComponent implements OnInit {
   ngOnInit() {
     this.filterItems = this.tabItem.filterItem;
     this.chooseFilter();
-
-    console.log(this.dotsLength);
   }
 
   public chooseFilter( _filterKey?: string ) {
