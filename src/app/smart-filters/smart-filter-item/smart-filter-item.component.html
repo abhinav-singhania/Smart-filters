@@ -15,9 +15,7 @@
     </div>
   </div>
 
-  <div class="smart-filters"
-    
-   >
+  <div class="smart-filters">
     <div [ngSwitch]="selectDot">
       <div *ngSwitchCase="'dotOne'"
         fxLayout="row wrap" fxLayoutGap="12px">
@@ -70,17 +68,9 @@
     fxLayoutGap="12px"
     class="slider"
     *ngIf="smartFilters.length > 6">
-    <div class="circle"
-      [ngClass]="{ 'selected': selectDot === 'dotOne' }" 
-      (click)="changeSlider('dotOne')"></div>
-    <div class="circle"
-      [ngClass]="{ 'selected': selectDot === 'dotTwo' }"
-      (click)="changeSlider('dotTwo')"></div>
-    <div class="circle"
-      [ngClass]="{ 'selected': selectDot === 'dotThree' }"
-      (click)="changeSlider('dotThree')"></div>
-    <div class="circle"
-      [ngClass]="{ 'selected': selectDot === 'dotFour' }"
-      (click)="changeSlider('dotFour')"></div>
+    <div *ngFor="let dot of dots | slice: 0:dotsLength"
+      class="circle"
+      [ngClass]="{ 'selected': selectDot === dot }" 
+      (click)="changeSlider(dot)"></div>
   </div>
 </div>

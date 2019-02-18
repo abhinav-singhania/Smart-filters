@@ -16,13 +16,18 @@ export class SmartFilterItemComponent implements OnInit {
   public filterKey: string;
   public allFilters: string[];
 
+  public numberOfDots: number;
   public selectDot = 'dotOne';
+
+  public readonly dots = ['dotOne', 'dotTwo', 'dotThree', 'dotFour'];
 
   constructor() { }
 
   ngOnInit() {
     this.filterItems = this.tabItem.filterItem;
     this.chooseFilter();
+
+    console.log(this.dotsLength);
   }
 
   public chooseFilter( _filterKey?: string ) {
@@ -44,5 +49,10 @@ export class SmartFilterItemComponent implements OnInit {
 
   public get smartFilters() {
     return this.selectedFilter;
+  }
+
+  public get dotsLength() {
+    this.numberOfDots = this.smartFilters.length / 4;
+    return this.numberOfDots;
   }
 }
